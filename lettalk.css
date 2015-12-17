@@ -1,0 +1,226 @@
+body{
+  overflow-y: scroll;
+}
+textarea{
+  border: 0px;
+  background-color: white;
+  font-size: 1em;
+  padding: .3em;
+  border-radius: .3em;
+  resize: none;
+}
+.row{
+  margin-top: 1em;
+}
+
+#chatSection header{
+  display: block;
+  padding: .2em 0;
+  font-size: .8em;
+}
+#chatSection img{
+  max-width: 70px;
+  max-height: 70px;
+}
+#chatSection .saying{
+  width: 98%;
+  padding: .3em;
+  background-color: white;
+  border-radius: .3em;
+}
+#chatSection .saying *{
+  font-family: "Microsoft JhengHei", 'Open Sans', "Helvetica Neue", Helvetica, "Microsoft YaHei", sans-serif !important;
+  font-size: 1em !important;
+}
+#chatSection .col-2{
+  text-align: right;
+}
+#chatSection .col-8{
+  vertical-align: top;
+}
+#chatLoadingGif{
+  width: 100%;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-image: url('include/loading.gif');
+  opacity: 0;
+}
+#chatSection .fadeIn{
+  opacity: 0;
+  -o-transform: scale(0,0);
+  -moz-transform: scale(0,0);
+  -webkit-transform: scale(0,0);
+  transform: scale(0,0);
+}
+
+
+#topicTitle{
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  color: transparent;
+}
+#topicSection{
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+#topicUser{
+  border: 0px;
+  background-color: transparent;
+  font-size: .5em;
+  color: gray;
+  color: transparent;
+}
+#topic{
+  width: 95%;
+  margin-left: 1%;
+  height: auto;
+  color: transparent;
+  background-color: white;
+  padding: .3em;
+  border-radius: .3em;
+}
+
+
+#bottom{
+  position: fixed;
+  bottom: 0px; 
+  width: 100%;
+  height: auto;
+  z-index: 999;
+}
+#bottom>.wrap{
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.bottomBtn{
+  display: block;
+  background-color: #eee;
+  cursor: pointer;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1em;
+}
+#autoUpdate{
+  width: 50%;
+  float: left;
+}
+#IwantSay{
+  width: 50%;
+  border-left: 1px solid gray;
+  float: right;
+}
+
+
+#IsaySection{
+  margin-bottom: 2em;
+  display: none;
+  overflow: hidden;
+}
+#IsaySection img{
+  max-width: 70px;
+  max-height: 70px;
+}
+#IsaySection #myName{
+  display: block;
+  padding: .2em 0;
+  font-size: 1.2em;
+  text-align: left;
+  background: transparent;
+  color: white;
+}
+#IsaySection #Isay{
+  width: 97%;
+  font-size: 1.5em;
+  padding: .3em;
+  background-color: white;
+  text-align: left;
+  height: 5em;
+  vertical-align: top;
+  border-radius: .3em;
+}
+#IsaySection .col-8{
+  vertical-align: top;
+}
+
+#IsaySection button{
+  display: block;
+  background-color: white;
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  max-width: 30px;
+  max-height: 30px;
+  text-align: center;
+  margin: 1em auto;
+  cursor: pointer;
+  border-radius: 1em;
+}
+#IsayExpression{
+  cursor: pointer;
+}
+#photoStorage{
+  display: none;
+  position: relative;
+  background-color: #484848;
+  height: auto;
+  color: #333;
+  border-radius: .3em;
+}
+#photoStorage strong{
+  display: block;
+  padding-left: 20%;
+  text-align: left;
+}
+#photoStorage form{
+  display: block;
+  text-align: right;
+}
+#photoStorage form input{
+  padding: .3em;
+  background: #eee;
+  color: #333;
+  cursor: pointer;
+  font-weight: 900;
+}
+#expressionSet img{
+  cursor: pointer;
+  margin: .5em;
+}
+#photoStorage .topArrow{
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  width: 0px;
+  height: 0px;
+  bottom: -.7em;
+  left: 20%;
+  border-left: .8em solid transparent;
+  border-right: .8em solid transparent;
+  border-top: .8em solid #484848;
+}
+
+
+
+footer{
+  display: none;
+  width: 100%;
+  font-size: .5em;
+  line-height: 2em;
+  padding-top: 2em;
+  color: gray;
+  background-color: #333;
+  text-align: center;
+}
+footer .ad{
+  font-size: 1.5em;
+}
+
+#topicTitle , #topicSection , #topicUser , #topic{
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  -ms-transition: color 1s;
+  transition: color 1s;
+}

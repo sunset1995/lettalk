@@ -1,0 +1,273 @@
+body{
+  overflow-y: scroll;
+}
+#searchBtn img{
+  width: 25px;
+  margin-right: .8em;
+  vertical-align: middle;
+}
+#showAllBtn{
+  color: white !important;
+  padding-right: 1em;
+}
+#searchBtn img:hover , #showAllBtn:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+
+#titleSection{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+#titleSection header{
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  cursor: default;
+  padding-left: .3em;
+}
+
+#titleSection nav{
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+#titleSection nav>*{
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  color: #CCC;
+  padding-left: .3em;
+  cursor: default;
+}
+
+#titleSection nav>.selectSort{
+  width: 4em;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+#titleSection nav>.searchInputBox{
+  font-size: 1em;
+  width: 8em;
+  background-color: white;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-left: 1em;
+  padding: 0 .3em;
+  color: #333;
+  cursor: text;
+  border-radius: .3em;
+  resize: none;
+}
+#titleSection nav>#selectList{
+  display: none;
+  float: none;
+  height: auto;
+  line-height: auto;
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  background-color: #333;
+  padding: 1em .3em;
+  z-index: 999;
+  cursor: default;
+  opacity: 0;
+  border-radius: .1em;
+}
+#titleSection nav>#selectList div{
+  background-color: white;
+  padding: .3em 0;
+  text-align: center;
+  color: #333;
+  height: auto;
+  cursor: pointer;
+  height: 1.2em;
+  line-height: 1.2em;
+}
+#titleSection nav>#selectList div:hover{
+  opacity: .8;
+}
+#titleSection nav>#selectList .close{
+  float: none;
+  padding: 0px;
+  height: auto;
+  width: 100%;
+  bottom: .35em;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  background-color: transparent;
+}
+#titleSection nav>#selectList .close div{
+  width: .3em;
+  height: .3em;
+  padding: 0px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: .15em;
+}
+#titleSection nav>#selectList .decoration{
+  background-color: transparent;
+  position: absolute;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 0px;
+  height: 0px;
+  top: -10px;
+  right: 2em;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333;
+}
+.nowSort{
+  color: #aaa !important;
+}
+
+
+#titleSectionSwitch{
+  position: absolute;
+  bottom: -1.6em;
+  width: 1.5em;
+  padding-left: .5em;
+  padding-right: .5em;
+  padding-bottom: .4em;
+  background-color: #333;
+  cursor: pointer !important;
+  opacity: .3;
+  border-bottom-left-radius: .3em;
+  border-bottom-right-radius: .3em;
+}
+#titleSectionSwitch span{
+  display: block;
+  height: .1em;
+  margin-top: .3em;
+  width: 100%;
+  background-color: white;
+}
+#titleSectionSwitch:hover{
+  opacity: 1;
+}
+
+
+#addNewSection{
+  width: 100%;
+  border-bottom: 2px solid gray;
+}
+#inputTitle{
+  width: 100%;
+  border: 0px;
+  background-color: transparent;
+  font-size: 1.5em;
+  text-align: center;
+  color: #333;
+}
+#inputName{
+  border: 0px;
+  background-color: transparent;
+  font-size: .5em;
+  color: gray;
+}
+#inputTopic{
+  display: block;
+  border: 0px;
+  background-color: white;
+  font-size: .8em;
+  width: 98%;
+  height: 5em;
+  padding: .5em;
+  color: #333;
+  border-radius: .3em;
+  resize: none;
+}
+#inputSubmit{
+  display: block;
+  border: 0px;
+  padding: 0px;
+  background-color: #DDD;
+  font-size: 1em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  margin: 1em auto;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+#chatSection .subject{
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 2em;
+  background-color: transparent;
+  opacity: 0;
+}
+#chatSection .subject:hover{
+  text-decoration: none;
+}
+#chatSection .subject span{
+  font-size: .8em;
+  color: gray;
+  line-height: 1.2em;
+  margin: 0;
+}
+#chatSection .subject strong{
+  display: block;
+  font-size: 1.5em;
+  text-align: left;
+  color: #333;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+
+footer{
+  font-size: .8em;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  padding-top: 50px;
+  opacity: .7;
+}
+
+
+/* responsive */
+@media screen and (max-width: 600px){
+  #titleSection header{
+    float: none;
+	text-align: center;
+	padding-left: 0;
+  }
+  #titleSection nav{
+    float: none;
+    position: relative;
+    clear: both;
+  }
+  #addNewSection textarea{
+    display: block;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+  }
+}
+
+#chatSection{
+  -webkit-transition: height 1s;
+  -moz-transition: height 1s;
+  -o-transition: height 1s;
+  -ms-transition: height 1s;
+  transition: height 1s;
+}
+#chatSection .subject{
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  -ms-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+
+
